@@ -6,7 +6,7 @@ A NodeJs API made with  Express Framework
 ##### This simple API handle user registrations and accepting 5 types of requests:  You can try it by setting up a request on insomnia or postman against this url: 
 ###### http://api.wolfplace.solutions/users
 ##### The Api also serves static files. Check it out acessing: 
-###### http://api.wolfpalce.solutions/public/wolf.jpg
+###### http://api.wolfplace.solutions/static/wolf.jpg
 
 ###
 ## GET | POST | PUT | PTCH | DELETE
