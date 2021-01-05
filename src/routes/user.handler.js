@@ -6,8 +6,13 @@ const getUsers = async (request,response) => {
 }
 const createNewUser =  async (request,response)=>{
     const user = request.body
-    const res = database.createNewUser(user)
-    return response.json(res)
+    const emailExists =  database.emailExists(user.email)
+    if (emailExists) 
+        response.json({message: 'This email  already exist'})
+    else{
+        const res = database.createNewUser(user)
+        return response.json(res)
+    }
 }
  const updateUser = async (request,response) => {
     const target = request.params.id

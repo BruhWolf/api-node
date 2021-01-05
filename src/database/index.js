@@ -55,6 +55,9 @@ class Database {
           return {message:`The user ${target}  does not exists`}
           }
   }
+  emailExists(email){
+      return this.data.find(user=>user.email === email) ? true : false
+  }
 }
  
 module.exports = new Database()
