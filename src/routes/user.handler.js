@@ -1,4 +1,4 @@
-const database = require('../../database')
+const database = require('../database')
  
 const getUsers = async (request,response) => { 
     const users = database.getUsers()
