@@ -56,5 +56,4 @@ A NodeJs API made with  Express Framework
    ## 
    #hope you enjoy! Thank you
   ##
-  ##
   ## All contents here are just for study purpose!
