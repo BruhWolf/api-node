@@ -1,9 +1,10 @@
 const { request, response } = require('express')
 const Express =  require('express')
 const router = require('./router')
+const cors = require('cors')
 const api = Express()
-
 api.use(Express.json())
+api.use(cors())
 api.use(router)
 router.use('/static', Express.static(__dirname+ '/public'))
-api.listen(3333)
+api.listen(process.env.PORT || 3333)
