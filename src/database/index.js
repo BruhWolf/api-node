@@ -7,13 +7,13 @@ class Database {
       },
       {
         "id": "2",
-        "name": "prisyla costa",
-        "email": "business.brunocosta@gmail.com"
+        "name": "antonia catarina",
+        "email": "catarina@wolfplace.solutions"
       },
       {
         "id": "3",
-        "name": "anderson costa",
-        "email": "business.brunocosta@gmail.com"
+        "name": "astrogildo godofredo",
+        "email": "contato.godofredo@wolfplace.solutions"
       }
     ]
     getUsers = () => { 
