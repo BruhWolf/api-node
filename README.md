@@ -53,12 +53,8 @@ A NodeJs API made with  Express Framework
   - Just pass the target "id" as a param to the url and the correspondent user will be deleted.
   ######   example DEL:   http://api.wolfplace.solutions/users/3
     This Delete The user where the id = "3"
+   ## 
+   #hope you enjoy! Thank you
   ##
   ##
-    
-    
-    
-  
-  
-
-## You can try it at [Wolfplace](http://api.wolfplace.solutions)
+  ## All contents here are just for study purpose!
