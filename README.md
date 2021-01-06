@@ -30,7 +30,7 @@ The big difference between them is that PATCH method is able to update every sin
 On the other hand, the PUT method updates all properties of a user object at once. It will keep the "id"  but it will replace the entire object for the one passed into the body request.
 #### In order to make a successful request, it is necessary 2 steps: 
 - to pass the target user "id" as a param to the url 
-- to pass JSON object in body of the request which the content to be updated.
+- to pass a JSON object in the body of the request with the content to be updated.
 ###### example PUT:   http://api.wolfplace.solutions/users/1
 ```
   {
