@@ -18,10 +18,12 @@ This returns all users that are registered in the database
 - It accepts a JSON object in the body of the request with 2 parameters: "Name" which is a string and a "email" which has to be a valid e-mail.
 - The email has to be unique to prevent duplicate users in the system.  
 ###### example body JSON :
+```
   {
    "name": "bruno costa",
    "email": "business.brunocosta@gmail.com"
   }
+```
 ### PUT & PATCH
 The PUT and PATCH methods are very similar. Both stand for updating users on database. 
 The big difference between them is that PATCH method is able to update every single property of a user separated.
@@ -30,16 +32,19 @@ On the other hand, the PUT method updates all properties of a user object at onc
 - to pass the target user "id" as a param to the url 
 - to pass JSON object in body of the request which the content to be updated.
 ###### example PUT:   http://api.wolfplace.solutions/users/1
+```
   {
    "name": "bruno costa",
    "email": "business.brunocosta@gmail.com"
   }
+```
 This will update the user "1" to Json content. Note that the entire  user content will be updated.
 ###### example PATCH:   http://api.wolfplace.solutions/users/2     
+```
   {
    "name": "bruno costa",
   }
-
+```
 This will just update the "name" of the user "2" to "bruno costa". Note that you can update every single property separated.
 ### DEL
 This is very intuitive. it delete the a user that correspond to a specific "id"
