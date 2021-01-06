@@ -38,7 +38,7 @@ On the other hand, the PUT method updates all properties of a user object at onc
    "email": "business.brunocosta@gmail.com"
   }
 ```
-This will update the user "1" to Json content. Note that the entire  user content will be updated.
+This will update the user "1" to JSON content. Note that the entire  user content will be updated.
 ###### example PATCH:   http://api.wolfplace.solutions/users/2     
 ```
   {
@@ -47,11 +47,11 @@ This will update the user "1" to Json content. Note that the entire  user conte
 ```
 This will just update the "name" of the user "2" to "bruno costa". Note that you can update every single property separated.
 ### DEL
-This is very intuitive. it delete the a user that correspond to a specific "id"
+This is very intuitive. it delete the a user that correspond to a specific "id".
 - Just pass the target "id" as a param to the url and the corresponding user will be deleted.
 ######   example DEL:   http://api.wolfplace.solutions/users/3
-This Delete The user where the id = "3"
+This Delete The user where the id = "3".
 ## 
-# hope you enjoy it! Thank you
+hope you enjoy it! Thank you
 ##
 ## All contents here are just for study purpose!
