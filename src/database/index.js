@@ -3,17 +3,22 @@ class Database {
       {
         "id": "1",
         "name": "bruno costa",
-        "email": "business.brunocosta@gmail.com"
+        "email": "business.brunocosta@gmail.com",
+        "password": "$2a$10$jS0ossfu4yA8PVQuhh2TNuiVhGQ/aGJgZRRt38CJ7kFT1rs2M/f1q"
       },
       {
         "id": "2",
         "name": "antonia catarina",
-        "email": "catarina@wolfplace.solutions"
+        "email": "catarina@wolfplace.solutions",
+        "password": "$2a$10$LYkESZ5ckRGf1PW25cwrZ.UygqiLgNcODjqpBdo/cFhrB4tq6MTSe"
+
       },
       {
         "id": "3",
         "name": "astrogildo godofredo",
-        "email": "contato.godofredo@wolfplace.solutions"
+        "email": "contato.godofredo@wolfplace.solutions",
+        "password":  "$2a$10$R2ouXM1nLg018VzCvFSfe.kaID53i9HyF8gERv6IY8pNiW1gPJzVe"
+
       }
     ]
     getUsers = () => { 
@@ -23,7 +28,7 @@ class Database {
           if(a.id > b.id) return 1;
           return 0;
           })
-      return sortById
+      return sortById.map(user=>({...user}))
   }
   createNewUser = (user)=>{
       const newID = (this.data.length + 1).toString()
@@ -57,6 +62,15 @@ class Database {
   }
   emailExists(email){
       return this.data.find(user=>user.email === email) ? true : false
+  }
+  getUserByID(id){
+    const user  = this.data.find(user => user.id === id)
+    return {...user, password: undefined}
+  }
+  getUserByEmail(email){
+    const user  = this.data.find(user => user.email === email)
+    if(!user) return undefined
+    return {...user}
   }
 }
  

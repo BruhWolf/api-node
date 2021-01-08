@@ -2,7 +2,8 @@ const Joi = require('joi')
 const validator = require('express-joi-validation').createValidator({})
 const postUserValidation = Joi.object({
     name: Joi.string().required(),
-    email: Joi.string().email().required()
+    email: Joi.string().email().required(),
+    password: Joi.string().required()
 })
 const delUserValidation = Joi.object({
     id: Joi.string().regex(/^\d+$/,"number").required()

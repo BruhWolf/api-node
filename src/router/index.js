@@ -1,8 +1,10 @@
 const Express = require('express')
-const userRoutes = require('../routes/user.routes')
+const usersRoutes = require('../routes/user.routes')
+const auth = require('../routes/auth.routes')
+const aulas = require('../routes/aulas.routes')
 const router = Express()
 
-userRoutes(router)
-
-
+usersRoutes(router)
+auth(router)
+aulas(router)
 module.exports = router
